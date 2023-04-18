@@ -8,10 +8,10 @@ h1 {
   padding: 10px 0px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 22px;
 }
 h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 .align-center {
   text-align: center;
@@ -60,20 +60,20 @@ th, td {
 
 .more::before {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 0;
   content: "";
-  height: 8px;
-  width: 8px;
+  height: 9px;
+  width: 9px;
   border-top: 2px solid rgb(57, 57, 57);
   border-right: 2px solid rgb(57, 57, 57);
   transition: all 0.2s ease 0s;
-  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(135deg);
 }
 
 .more.expanded::before {
-  top: 45%;
-  transform: translateY(-50%) rotate(135deg);
+  top: 55%;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 
@@ -102,14 +102,15 @@ th, td {
 }
 
 .sales-price {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   color: red;
 }
 .discount-price::before{
   content: "\00a0";
 }
 .discount-price {
-  font-size: 18px;
+  font-size: 16px;
   color: gray;
   position: relative;
 }
@@ -119,11 +120,12 @@ th, td {
   height: 1px;
   background: black;
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   left: 0;
 }
 .regular-price {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   color: black;
 }
 
