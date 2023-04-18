@@ -14,7 +14,7 @@ const ProductCard = ({ product, addToCart }: ProductCardProps) => {
     setExpanded(!expanded);
   };
   return (
-    <div className="product">
+    <article className="product">
       <img
         width="100%"
         src={image}
@@ -26,17 +26,17 @@ const ProductCard = ({ product, addToCart }: ProductCardProps) => {
       />
       <div className="card-content-container">
         <h3 className="align-center">{title}</h3>
-        <div className={`content ${!expanded ? "close" : "open"}`}>
-          {description}
-        </div>
-        <div
-          aria-expanded={expanded}
-          aria-label="show more"
-          onClick={handleExpandClick}
-          className={`more ${!expanded ? "collapse" : "expanded"}`}
-        >
-          {!expanded ? "See information" : "Hide information"}
-        </div>
+          <p className={`content ${!expanded ? "close" : "open"}`}>
+            {description}
+          </p>
+          <div
+            aria-expanded={expanded}
+            aria-label="show more"
+            onClick={handleExpandClick}
+            className={`more ${!expanded ? "collapse" : "expanded"}`}
+          >
+            {!expanded ? "See information" : "Hide information"}
+          </div>
         <div className="price-container">
           {salesPrice && <div className="sales-price">{salesPrice} kr</div>}
           <div className={salesPrice ? "discount-price" : "regular-price"}>
@@ -49,7 +49,7 @@ const ProductCard = ({ product, addToCart }: ProductCardProps) => {
           </button>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

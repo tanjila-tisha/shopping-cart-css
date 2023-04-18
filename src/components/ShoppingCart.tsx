@@ -14,7 +14,7 @@ const ShoppingCart = ({ items, products }: ShoppingCartProps) => {
   if (!Object.keys(items).length) return null;
 
   return (
-    <div className="cart-container">
+    <section className="cart-container">
       <h2 className="align-center">Shopping cart</h2>
       <div className="table-container">
         <table width="650" aria-label="Shopping cart">
@@ -42,7 +42,7 @@ const ShoppingCart = ({ items, products }: ShoppingCartProps) => {
           </tbody>
         </table>
       </div>
-    </div>
+    </section>
   );
 };
 

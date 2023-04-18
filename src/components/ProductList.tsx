@@ -31,16 +31,14 @@ const ProductList = () => {
       <header>
         <h1 className="align-center">Toys Shop</h1>
       </header>
-      <main className="products-container">
+      <main className="product-container">
         {products.map((product: Product, index) => (
           <section className="product-card" key={index}>
             <ProductCard product={product} addToCart={addToCart} />
           </section>
         ))}
-      </main>
-      <footer>
         <ShoppingCart items={cartItems} products={products} />
-      </footer>
+      </main>
     </Fragment>
   );
 };
