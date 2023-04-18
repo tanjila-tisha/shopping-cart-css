@@ -26,8 +26,7 @@ const ProductCard = ({ product, addToCart }: ProductCardProps) => {
       />
       <div className="card-content-container">
         <h3 className="align-center">{title}</h3>
-
-        <div className={`content full ${!expanded ? "close" : "open"}`}>
+        <div className={`content ${!expanded ? "close" : "open"}`}>
           {description}
         </div>
         <div
