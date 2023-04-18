@@ -76,23 +76,22 @@ th, td {
   transform: translateY(-50%) rotate(135deg);
 }
 
+
 .product .content {
-  color: gray;
-}
-.product .content.full {
   overflow: hidden;
-  transition: height 0.2s ease-in-out;
+  color: gray;
+  transition: height 0.2s ease;
+  line-height: 20px;
 }
-.product .content.full.close{
+.product .content.close{
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box !important;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  line-height: 1.2;
   height: 60px;
 }
-.product .content.full.open{
+.product .content.open{
   height: 120px;
   overflow-y: scroll;
 }
@@ -166,7 +165,7 @@ th, td {
   .product-card {
     flex: 100%;
   }
-  .product .content.full.open{
-    height: 170px;
+  .product .content.open{
+    height: 180px;
   }
 }
